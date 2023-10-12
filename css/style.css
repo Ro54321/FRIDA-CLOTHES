@@ -1,0 +1,152 @@
+/*Reseat*/
+* {
+    padding : 0;
+    box-sizing : border-box;
+    }
+    header {
+    display: flex;
+    background-color : black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+    header img {
+    width: 60%;
+    height:  80%;
+    }
+
+    header nav ul {
+    list-style : none;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2vh;
+    flex-wrap: wrap;
+    }
+
+ /*MAIN*/
+ main{
+    background-color: lightgrey;
+ }
+section {
+    padding: 20px;
+}
+ section h1 {
+    text-align: center;
+    font-size:  xx-large;
+    font-style: oblique;
+ }
+ section h4 {
+    text-align: center;
+    font-size:  xx-large;
+    font-style: oblique;
+    border: 1px solid grey;
+ }
+
+ /*Index*/
+ section div {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr;
+ }
+
+ section img{
+    width: 80%;
+    height: 80%;
+ }
+
+ /*Presentación*/
+.Presentacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;   
+}
+.Presentacion img {
+   height: 100%;
+   width: 100%;
+}
+.Presentacion p  {
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+    border: 2px solid grey;
+    flex-wrap: wrap;
+
+}
+/*Productos*/
+.Contenedor-productos{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    align-items: center;
+}
+.card img{
+    border: 2px solid black;
+}
+.card p{
+    text-align: center;
+    font-size: large;
+    font-style:inherit;
+}
+/*Consultas*/
+section form {
+    display: flex;
+}
+.formulario {
+    width: 100%;
+    flex-wrap: wrap;
+    height: 20%;
+}
+/*Medios de pago*/
+.pagos {
+    text-align: center;
+    font-size: x-large;
+    font-style: unset;
+}
+section ul{
+    list-style: none;
+}
+
+/*FOOTER*/
+footer {
+    background-color: darkgrey ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer div {
+    display: flex;
+    column-gap: 20px;
+}
+.contenedor-footer {
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+/* MEDIA QUERYS*/
+@media screen and (max-width:768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
