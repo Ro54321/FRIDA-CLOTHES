@@ -101,6 +101,8 @@ section form {
     flex-wrap: wrap;
     height: 20%;
 }
+
+
 /*Medios de pago*/
 .pagos {
     text-align: center;
@@ -130,6 +132,7 @@ footer div {
 
 /* MEDIA QUERYS*/
 @media screen and (max-width:768px) {
+    /*HEADER*/
     header{
         display: flex;
         flex-direction: column;
@@ -142,6 +145,27 @@ footer div {
         display: flex;
         flex-direction: column;
     }
+    /*MAIN*/
+    h4 {
+        background-color: darkslategrey;
+        font-size: larger;
+    }
+    /*Consultas*/
+    .mapa{
+        grid-template-areas: 
+        "mapa";
+        align-items: center;
+        width: min-content;
+        grid-area: mapa;
+    }
+
+/*FOOTER*/
+    footer {
+        background-color: darkslategray;
+    }
+    footer h3 {
+    font-size: small;
+}
 }
 
 
