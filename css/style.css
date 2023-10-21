@@ -138,9 +138,41 @@ footer div {
     align-content: center;
 }
 
+/*TABLET*/
+@media screen and (max-width:768px){
+  /*Presentacion*/
+  .Presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-/* MEDIA QUERYS*/
-@media screen and (max-width:768px) {
+.Presentacion img {
+    display: grid;
+}
+
+/*Consultas*/
+.mapa{
+    grid-template-areas: 
+    "mapa";
+    align-items: center;
+    width: min-content;
+    grid-area: mapa;
+} 
+/*FOOTER*/
+.contenedor-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ }
+    footer h3 {
+    font-size: small;
+} 
+}
+
+/*Mobile*/
+@media screen and (max-width:380px) {
     /*HEADER*/
     .contenedor-header {
         display: flex;
