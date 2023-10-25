@@ -1,0 +1,24 @@
+/*Main-Presentacion*/
+main {
+    &presentacion {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+          "imgp parrafo";
+        img {
+            grid-area: imgp;
+            width: 100%;
+            padding: 2%;
+            place-self: center; 
+        }   
+        p {
+            grid-area: parrafo;
+            text-align: center;
+            font-style: italic;
+            border: 2px solid grey;
+            font-size: medium; 
+        }
+    }
+
+}

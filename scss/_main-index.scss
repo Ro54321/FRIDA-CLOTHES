@@ -1,0 +1,21 @@
+/*Mian-Index*/
+main {
+    section {
+        h1 {
+            text-align: center;
+            font-size:  xx-large;
+            font-style: oblique;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            img {
+                width: 80%;
+                height: 80%;
+                place-self: center;
+                padding: 10%; 
+            }  
+        }
+    }
+}

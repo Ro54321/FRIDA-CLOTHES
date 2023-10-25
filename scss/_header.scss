@@ -1,0 +1,24 @@
+/*Header*/
+header {
+    display: flex;
+    background-color : black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .LOGO {
+        width: 50%;  
+    }
+    nav {
+        ul {
+        list-style : none;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2vh;
+        flex-wrap: wrap; 
+          li {
+             a {
+                color: grey;
+             }
+         }
+        }
+    }
+}

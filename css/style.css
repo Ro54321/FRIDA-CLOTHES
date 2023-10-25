@@ -3,7 +3,7 @@
     padding : 0;
     box-sizing : border-box;
     }
-    header {
+    /* header {
     display: flex;
     background-color : black;
     display: grid;
@@ -20,19 +20,20 @@
     justify-content: space-between;
     column-gap: 2vh;
     flex-wrap: wrap;
-    }
+    } */
 
  /*MAIN*/
  main{
     background-color: lightgrey;
  }
 
-
+/* 
  section h1 {
     text-align: center;
     font-size:  xx-large;
     font-style: oblique;
- }
+ } */
+ 
  section h4 {
     text-align: center;
     font-size:  xx-large;
@@ -40,7 +41,7 @@
     border: 1px solid grey;
  }
 
- /*Index*/
+ /* Index
  section div {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
@@ -52,9 +53,9 @@
     height: 80%;
     place-self: center;
     padding: 10%;
- }
+ } */
 
- /*Presentación*/
+ /* Presentación
  .Presentacion {
     padding: 0;
     display: grid;
@@ -77,9 +78,9 @@
     font-style: italic;
     border: 2px solid grey;
     font-size: medium;
-}
+} */
 
-/*Productos*/
+/* Productos
 .Contenedor-productos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -100,29 +101,29 @@
     text-align: center;
     font-size: large;
     font-style:inherit;
-}
+} */
 /*Consultas*/
-section form {
+/* section form {
     display: flex;
 }
 .formulario {
     width: 100%;
     flex-wrap: wrap;
     height: 20%;
-}
+} */
 
 
 /*Medios de pago*/
-.pagos {
+/* .pagos {
     text-align: center;
     font-size: x-large;
     font-style: unset;
 }
 section ul{
     list-style: none;
-}
+} */
 
-/*FOOTER*/
+/* FOOTER
 footer {
     background-color: darkgrey ;
     display: flex;
@@ -136,7 +137,7 @@ footer div {
 .contenedor-footer {
     flex-wrap: wrap;
     align-content: center;
-}
+} */
 
 /*TABLET*/
 @media screen and (max-width:768px){
