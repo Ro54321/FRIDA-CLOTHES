@@ -1,5 +1,111 @@
 /*Mediaquerys*/
 /*TABLET*/
 @media screen and (max-width:1024px)  {
+    /*main-presentación*/
+     main {
+        section {
+            .Presentacion {
+                display: flex;
+             flex-wrap: wrap;
+              justify-content: center;
+             align-items: center;
+             img {
+                place-self: center;
+             }
+            }
+        }
+     }
+     /*main-consultas*/
+     section {
+        form {
+            div {
+                .mapa {
+                    grid-template-areas: 
+                    "mapa";
+                    align-items: center;
+                    width: min-content;
+                    grid-area: mapa;  
+                }
+            }
+        }
+     }
+      /*Footer*/
+      footer {
+        .contenedor-footer {
+             display: grid;
+             grid-template-columns: 1fr;
+             grid-template-rows: 1fr 1fr 1fr;
+        }
+      }  
+
+    }
     
+    /*Mobile*/
+    @media screen and (max-width:780px) {
+        header {
+            .contenedor-header{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow-x: hidden;
+                div {
+                    img {
+                        place-self:  center;
+                        width: 100%;   
+                    }
+                nav {
+                    place-self:  center;
+                    ul {
+                        font-size: small;
+                    }
+                }
+                
+            }
+        }
+    }
+    /*Main-presentacion*/
+    main {
+        section {
+            .Presentacion {
+                display: flex;
+                flex-wrap: wrap;
+             .imgP {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: max-content;
+                        padding: 0;
+                     } 
+                }
+            }
+        }
+     }
+     /*Main-consultas*/
+     main {
+        section {
+            form {
+                div {
+                    .mapa {
+                        grid-template-areas: 
+                        "mapa";
+                        align-items: center;
+                        width: min-content;
+                        grid-area: mapa;  
+                    }
+                }
+            }
+        }
+   }   
+  /*Footer*/
+  footer {
+    .contenedor-footer {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+      h3 {
+        font-size: small;
+      }
+    }
+  }
 }

@@ -1,3 +1,213 @@
+@charset "UTF-8";
+/*Header*/
+header {
+  display: flex;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .LOGO {
+  width: 50%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2vh;
+  flex-wrap: wrap;
+}
+header nav ul li a {
+  color: grey;
+}
 
+/*Mian-Index*/
+main section h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-style: oblique;
+}
+main section h2 {
+  text-align: center;
+  font-size: x-large;
+  font-style: italic;
+  color: rgb(102, 101, 101);
+}
+main section div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+main section div img {
+  width: 80%;
+  height: 80%;
+  place-self: center;
+  border-radius: 20%;
+  border-style: solid;
+  border-color: rgb(102, 101, 101);
+}
+
+/*Main-Presentacion*/
+main section .Presentacion {
+  padding: 0px;
+  margin-top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "imgp parrafo";
+}
+main section .Presentacion .imgP img {
+  grid-area: imgp;
+  width: 100%;
+  place-self: center;
+}
+main section .Presentacion p {
+  grid-area: parrafo;
+  text-align: center;
+  font-style: italic;
+  border: 2px solid grey;
+  font-size: medium;
+  height: min-content;
+  place-self: center;
+}
+
+/*Main-productos*/
+main section .Contenedor-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main section .Contenedor-productos .card {
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+  place-self: center;
+  padding: 10%;
+}
+main section .Contenedor-productos .card img {
+  border: 2px solid black;
+  object-fit: cover;
+  width: 100%;
+}
+main section .Contenedor-productos .card p {
+  text-align: center;
+  font-size: large;
+  font-style: inherit;
+}
+main section .Contenedor-productos .card p a {
+  color: grey;
+}
+
+/*Main-consultas*/
+main section form {
+  display: flex;
+}
+main section form div {
+  width: 100%;
+  flex-wrap: wrap;
+  height: 20%;
+}
+
+/*Medios de pago*/
+main .pagos {
+  text-align: center;
+  font-size: x-large;
+  font-style: unset;
+  margin-bottom: 0%;
+}
+main .pagos ul {
+  list-style: none;
+}
+main .pagos p h5 {
+  font-size: x-large;
+  font-style: oblique;
+}
+
+/*Mediaquerys*/
+/*TABLET*/
+@media screen and (max-width: 1024px) {
+  /*main-presentación*/
+  main section .Presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main section .Presentacion img {
+    place-self: center;
+  }
+  /*main-consultas*/
+  section form div .mapa {
+    grid-template-areas: "mapa";
+    align-items: center;
+    width: min-content;
+    grid-area: mapa;
+  }
+  /*Footer*/
+  footer .contenedor-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+/*Mobile*/
+@media screen and (max-width: 780px) {
+  header .contenedor-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  header .contenedor-header div img {
+    place-self: center;
+    width: 100%;
+  }
+  header .contenedor-header div nav {
+    place-self: center;
+  }
+  header .contenedor-header div nav ul {
+    font-size: small;
+  }
+  /*Main-presentacion*/
+  main section .Presentacion {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main section .Presentacion .imgP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section .Presentacion .imgP img {
+    width: max-content;
+    padding: 0;
+  }
+  /*Main-consultas*/
+  main section form div .mapa {
+    grid-template-areas: "mapa";
+    align-items: center;
+    width: min-content;
+    grid-area: mapa;
+  }
+  /*Footer*/
+  footer .contenedor-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  footer .contenedor-footer h3 {
+    font-size: small;
+  }
+}
+/*Footer*/
+footer {
+  background-color: darkgrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer div {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+}
 
 /*# sourceMappingURL=main.css.map */

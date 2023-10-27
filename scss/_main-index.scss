@@ -6,6 +6,12 @@ main {
             font-size:  xx-large;
             font-style: oblique;
         }
+        h2 {
+            text-align: center;
+            font-size:  x-large;
+            font-style:italic;
+            color: rgb(102, 101, 101); 
+        }
         div {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -14,7 +20,9 @@ main {
                 width: 80%;
                 height: 80%;
                 place-self: center;
-                padding: 10%; 
+                border-radius: 20%;
+                border-style: solid;
+                border-color: rgb(102, 101, 101); 
             }  
         }
     }

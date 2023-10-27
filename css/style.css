@@ -139,10 +139,10 @@ footer div {
     align-content: center;
 } */
 
-/*TABLET*/
+/* TABLET
 @media screen and (max-width:768px){
   /*Presentacion*/
-  .Presentacion {
+  /* .Presentacion {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -151,18 +151,18 @@ footer div {
 
 .Presentacion img {
     display: grid;
-}
+} */
 
 /*Consultas*/
-.mapa{
+/* .mapa{
     grid-template-areas: 
     "mapa";
     align-items: center;
     width: min-content;
     grid-area: mapa;
-} 
+}  */
 /*FOOTER*/
-.contenedor-footer{
+/* .contenedor-footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -170,12 +170,12 @@ footer div {
     footer h3 {
     font-size: small;
 } 
-}
+} */
 
 /*Mobile*/
-@media screen and (max-width:380px) {
+/* @media screen and (max-width:380px) { */
     /*HEADER*/
-    .contenedor-header {
+    /* .contenedor-header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -188,14 +188,14 @@ footer div {
     header nav ul {
         font-size: small;
        
-    }
+    /* 
     
     /*MAIN*/
     h4 {
         font-size: larger;
     }
     /*Presentacion*/
-    .Presentacion {
+    /* .Presentacion {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -204,19 +204,19 @@ footer div {
     
     .Presentacion img {
         display: grid;
-    }
+    } */
     
     /*Consultas*/
-    .mapa{
+    /* .mapa{
         grid-template-areas: 
         "mapa";
         align-items: center;
         width: min-content;
         grid-area: mapa;
-    }
+    } */
 
 /*FOOTER*/
- .contenedor-footer{
+ /* .contenedor-footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -224,8 +224,8 @@ footer div {
     footer h3 {
     font-size: small;
 
-}
-}
+} */
+
 
 
 
