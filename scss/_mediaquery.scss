@@ -15,6 +15,18 @@
             }
         }
      }
+     /*Main-index*/
+     main {
+        section {
+            div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+            }
+        }
+    }
+ 
+
      /*main-consultas*/
      section {
         form {
@@ -63,6 +75,17 @@
             }
         }
     }
+    /*Main-index*/
+    main {
+        section {
+            div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+            }
+        }
+    } 
+
     /*Main-presentacion*/
     main {
         section {
