@@ -5,28 +5,61 @@
      main {
         section {
             .Presentacion {
-                display: flex;
-             flex-wrap: wrap;
-              justify-content: center;
-             align-items: center;
-             img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+             div {
+                img {
                 place-self: center;
              }
             }
         }
      }
+    }
      /*Main-index*/
      main {
         section {
-            div {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+            .Inicio {
+                display: flex;
+                flex-wrap: wrap;}
+                .Inicio {
+                 justify-content: center;
+          img {
+             margin: 5px;
+             object-fit: cover;
+                 }
             }
         }
     }
- 
-
+ /*main-presentación*/
+ main {
+   section {
+      .Presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+      img {
+    justify-content: center;
+    max-width: 100%;
+     }
+    }
+   }
+}
+  /*Main-productos*/
+  main {
+    section {
+        .Contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    .card{ 
+        img {
+        max-height: 100%;
+            }
+         }
+        }
+    } }     
      /*main-consultas*/
      section {
         form {
@@ -78,13 +111,31 @@
     /*Main-index*/
     main {
         section {
-            div {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+            .Inicio {
+                display: flex;
+                flex-wrap: wrap;}
+                .Inicio {
+                 justify-content: center;
+          img {
+             margin: 5px;
+             object-fit: cover;
+                 }
             }
         }
     } 
+   /*Main-productos*/
+   main {
+     section {
+         .Contenedor-productos {
+     display: flex;
+     flex-wrap: wrap;
+     .card{ 
+         img {
+         max-height: 100%;
+             }
+          }
+         }
+     } }     
 
     /*Main-presentacion*/
     main {
@@ -99,6 +150,7 @@
                     img {
                         width: max-content;
                         padding: 0;
+                        justify-content: center;
                      } 
                 }
             }

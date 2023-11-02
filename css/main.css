@@ -20,7 +20,7 @@ header nav ul li a {
   color: grey;
 }
 
-/*Mian-Index*/
+/*Main-Index*/
 main section h1 {
   text-align: center;
   font-size: xx-large;
@@ -47,6 +47,9 @@ main section div img {
 }
 
 /*Main-Presentacion*/
+main section {
+  padding: 0%;
+}
 main section .Presentacion {
   padding: 0px;
   margin-top: 0%;
@@ -57,7 +60,7 @@ main section .Presentacion {
 main section .Presentacion .imgP img {
   grid-area: imgp;
   width: 100%;
-  place-self: center;
+  justify-content: center;
 }
 main section .Presentacion p {
   grid-area: parrafo;
@@ -123,6 +126,17 @@ main .pagos p h5 {
 /*Mediaquerys*/
 /*TABLET*/
 @media screen and (max-width: 1024px) {
+  /*Main-Index*/
+  main section div {
+    display: flex;
+    flex-wrap: wrap;}
+    .Inicio {
+     justify-content: center; 
+    }
+    main section .Inicio img {
+    margin: 5px;
+    object-fit: cover;
+    }
   /*main-presentación*/
   main section .Presentacion {
     display: flex;
@@ -131,7 +145,16 @@ main .pagos p h5 {
     align-items: center;
   }
   main section .Presentacion img {
-    place-self: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+  /*Main-productos*/
+  main section .Contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main section .Contenedor-productos .card img {
+    max-height: 100%;
   }
   /*main-consultas*/
   section form div .mapa {
@@ -164,6 +187,25 @@ main .pagos p h5 {
   }
   header .contenedor-header div nav ul {
     font-size: small;
+  }
+  /*Main-index*/
+  main section div {
+  display: flex;
+  flex-wrap: wrap;}
+  .Inicio {
+   justify-content: center; 
+  }
+  main section .Inicio img {
+  margin: 5px;
+  object-fit: cover;
+  }
+  /*Main-productos*/
+  main section .Contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main section .Contenedor-productos .card img {
+    max-height: 100%;
   }
   /*Main-presentacion*/
   main section .Presentacion {
